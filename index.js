@@ -54,3 +54,72 @@ console.log(me);
 console.log(
   "-----------------------------------------Ex 1------------------------------------------"
 );
+
+const dice = function () {
+  console.log(Math.floor(Math.random() * 6 + 1));
+};
+dice();
+
+console.log(
+  "-----------------------------------------Ex 2------------------------------------------"
+);
+
+const whoIsBigger = function (x, y) {
+  if (x > y && x !== y) {
+    console.log("The bigger number is:", x);
+  } else if (x < y && x !== y) {
+    console.log("The bigger number is:", y);
+  } else {
+    console.log("The given numbers are equal!");
+  }
+};
+whoIsBigger(0.5, 0.5);
+
+console.log(
+  "-----------------------------------------Ex 3------------------------------------------"
+);
+
+const splitMe = function (string) {
+  const splitArr = string.split(" ");
+  console.log(splitArr);
+};
+splitMe("Hello world!");
+
+console.log(
+  "-----------------------------------------Ex 4------------------------------------------"
+);
+
+const deleteOne = function (string, boolean) {
+  const splitArr = string.split("");
+  let newString = "";
+  if (boolean === true) {
+    splitArr.shift();
+    console.log(splitArr);
+  } else {
+    splitArr.pop();
+  }
+  for (let i = 0; i < splitArr.length; i++) {
+    newString += splitArr[i];
+  }
+  console.log(newString);
+};
+deleteOne("String says hello", true);
+
+console.log(
+  "-----------------------------------------Ex 5------------------------------------------"
+);
+
+// const onlyLetters = function (string) {
+//   for (let i = 0; i < string.length; i++) {
+//     let newString = "";
+//     let check = isNaN[i];
+//     if (check === false) {
+//       delete string[i];
+//     }
+//     newString += string[i];
+
+//     console.log(newString);
+//   }
+//   // console.log(newString);
+// };
+// onlyLetters("I have 4 dogs");
